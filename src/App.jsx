@@ -1,34 +1,67 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
+function Hero() {
+  return (
+    <header className="hero">
+      <h1>Crisostomo Dunn</h1>
+      <p className="tagline">Engineer &amp; developer — building thoughtful web experiences.</p>
+      <p>
+        <a className="cta" href="#projects">View projects</a>
+        &nbsp;•&nbsp;
+        <a className="cta" href="mailto:hello@crisostomodunn.com">Contact</a>
+      </p>
+    </header>
+  )
+}
+
+function ProjectCard({ title, description, url }) {
+  return (
+    <article className="project">
+      <h3>{title}</h3>
+      <p>{description}</p>
+      {url && (
+        <p>
+          <a href={url} target="_blank" rel="noopener noreferrer">View</a>
+        </p>
+      )}
+    </article>
+  )
+}
+
 function App() {
-  const [count, setCount] = useState(0)
+  const projects = [
+    { title: 'Project One', description: 'Short description of project one.', url: '#' },
+    { title: 'Project Two', description: 'Short description of project two.', url: '#' },
+    { title: 'Project Three', description: 'Short description of project three.', url: '#' },
+  ]
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <main>
+      <Hero />
+
+      <section id="about" className="section">
+        <h2>About</h2>
+        <p>I build web apps and design simple user experiences. I enjoy frontend engineering, automation, and open-source.</p>
+      </section>
+
+      <section id="projects" className="section">
+        <h2>Projects</h2>
+        <div className="projects-grid">
+          {projects.map((p) => (
+            <ProjectCard key={p.title} {...p} />
+          ))}
+        </div>
+      </section>
+
+      <section id="contact" className="section">
+        <h2>Contact</h2>
+        <p>Prefer email? <a href="mailto:hello@crisostomodunn.com">hello@crisostomodunn.com</a></p>
+      </section>
+
+      <footer className="site-footer">
+        <p>© {new Date().getFullYear()} Crisostomo Dunn</p>
+      </footer>
+    </main>
   )
 }
 
