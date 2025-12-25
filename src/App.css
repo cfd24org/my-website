@@ -177,3 +177,48 @@
 .courses-section .semester { margin-bottom: 1.5rem; }
 .courses-section ul { list-style: disc; padding-left: 1.25rem; }
 .courses-section li { margin-bottom: 0.25rem; }
+
+/* Password gate overlay */
+.pw-overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+  padding: 1rem;
+}
+.pw-modal {
+  background: var(--bg);
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.pw-modal h2 {
+  margin: 0 0 0.5rem;
+}
+.pw-modal input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  margin-bottom: 0.5rem;
+}
+.pw-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.pw-error {
+  color: #b00020;
+  margin-top: 0.4rem;
+}
+.pw-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}

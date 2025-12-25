@@ -1,5 +1,7 @@
 import './App.css'
 import Projects from './components/Projects'
+import PasswordGate from './components/PasswordGate'
+import React, { useState } from 'react'
 
 function Nav() {
   return (
@@ -58,6 +60,15 @@ function ProjectCard({ title, description, url }) {
 }
 
 function App() {
+  const [unlocked, setUnlocked] = useState(() => {
+    if (typeof window !== 'undefined') return sessionStorage.getItem('site_unlocked') === '1'
+    return false
+  })
+
+  if (!unlocked) {
+    return <PasswordGate onUnlock={() => setUnlocked(true)} />
+  }
+
   const projects = [
     { title: 'Project One', description: 'Short description of project one.', url: '#' },
     { title: 'Project Two', description: 'Short description of project two.', url: '#' },
