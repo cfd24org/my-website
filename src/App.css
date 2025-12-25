@@ -222,3 +222,17 @@
   color: var(--muted);
   margin-top: 0.5rem;
 }
+
+/* Project category styles */
+.project-category {
+  margin-bottom: 1.5rem;
+}
+.category-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+/* Featured section */
+.featured h3{margin-top:0;margin-bottom:0.5rem}

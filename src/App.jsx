@@ -2,6 +2,7 @@ import './App.css'
 import Projects from './components/Projects'
 import PasswordGate from './components/PasswordGate'
 import React, { useState } from 'react'
+import Featured from './components/Featured'
 
 function Nav() {
   return (
@@ -11,7 +12,7 @@ function Nav() {
         <div className="nav-links">
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
-          <a href="#resume">Resume</a>
+          <a href="/resources.html">Resources</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -37,9 +38,7 @@ function Hero() {
         &nbsp;•&nbsp;
         <a className="cta" href="mailto:hello@crisostomodunn.com">Contact</a>
         &nbsp;•&nbsp;
-        <a className="cta" href="/resume.html" target="_blank" rel="noopener noreferrer">View resume</a>
-        &nbsp;•&nbsp;
-        <a className="cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download resume</a>
+        <a className="cta" href="/resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
       </p>
     </header>
   )
@@ -86,77 +85,11 @@ function App() {
         <p>I build web apps and design simple user experiences. I enjoy frontend engineering, automation, and open-source.</p>
       </section>
 
-      <section id="courses" className="section courses-section">
-        <div className="semester">
-          <h3>Fall 2023</h3>
-          <ul>
-            <li>AMERSTD 10 — Introduction to American Studies (4) — B+</li>
-            <li>EPS 88 — PyEarth: A Python Introduction to Earth Science (2) — A</li>
-            <li>HISTORY 30 — Science and Society (4) — A-</li>
-            <li>ISF 60 — Technology and Values (3) — A</li>
-          </ul>
-        </div>
+      {/* courses moved off the homepage; full transcript in Resources page */}
 
-        <div className="semester">
-          <h3>Spring 2024</h3>
-          <ul>
-            <li>COMPSCI 61A — The Structure and Interpretation of Computer Programs (4) — A+</li>
-            <li>COMPSCI 70 — Discrete Mathematics and Probability Theory (4) — A</li>
-            <li>COMPSCI 197 — Field Study (2) — P</li>
-            <li>COMPSCI 198 — Directed Group Studies for Advanced Undergraduates (2) — P</li>
-            <li>DATA C8 — Foundations of Data Science (4) — A</li>
-            <li>ITALIAN R5A — Reading and Composition (4) — B</li>
-          </ul>
-        </div>
+      <Featured />
 
-        <div className="semester">
-          <h3>Fall 2024</h3>
-          <ul>
-            <li>COGSCI 1 — Introduction to Cognitive Science (4) — A-</li>
-            <li>COMPSCI 61B — Data Structures (4) — A</li>
-            <li>COMPSCI 197 — Field Study (1) — P</li>
-            <li>COMPSCI 198 — Directed Group Studies for Advanced Undergraduates (1) — P</li>
-            <li>DATA C100 — Principles & Techniques of Data Science (4) — A</li>
-            <li>STAT 98 — Directed Group Study (2) — P</li>
-          </ul>
-        </div>
-
-        <div className="semester">
-          <h3>Spring 2025</h3>
-          <ul>
-            <li>EECS 126 — Probability and Random Processes (4) — A-</li>
-            <li>ELENG 120 — Signals and Systems (4) — A-</li>
-            <li>MATH 104 — Introduction to Analysis (4) — C</li>
-            <li>MATH 110 — Abstract Linear Algebra (4) — A</li>
-            <li>MATH 198 — Directed Group Study (1) — P</li>
-          </ul>
-        </div>
-
-        <div className="semester">
-          <h3>Fall 2025</h3>
-          <ul>
-            <li>COMPSCI 61C — Great Ideas of Computer Architecture (4) — (in progress)</li>
-            <li>COMPSCI 162 — Operating Systems and System Programming (4) — (in progress)</li>
-            <li>COMPSCI 170 — Efficient Algorithms and Intractable Problems (4) — (in progress)</li>
-            <li>UGIS 192B — Supervised Research: Social Sciences (4) — (in progress)</li>
-          </ul>
-        </div>
-
-      </section>
-
-      <Projects />
-
-      <section id="resume" className="section resume-section">
-        <h2>Resume</h2>
-        <div className="resume-actions">
-          <a className="cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
-          &nbsp;•&nbsp;
-          <a className="cta" href="/resume.html" target="_blank" rel="noopener noreferrer">Open in new tab</a>
-        </div>
-        <div className="resume-container">
-          <iframe src="/resume.pdf" title="Resume"></iframe>
-        </div>
-      </section>
+      {/* keep Projects component on the resources page only */}
 
       <section id="contact" className="section">
         <h2>Contact</h2>
@@ -166,9 +99,7 @@ function App() {
       <footer className="site-footer">
         <p>© {new Date().getFullYear()} Crisostomo Dunn</p>
         <p>
-          <a className="cta" href="/resume.html" target="_blank" rel="noopener noreferrer">View resume</a>
-          &nbsp;•&nbsp;
-          <a className="cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download resume (PDF)</a>
+          <a className="cta" href="/resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
         </p>
       </footer>
     </main>
