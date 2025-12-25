@@ -74,6 +74,66 @@ function App() {
         <p>I build web apps and design simple user experiences. I enjoy frontend engineering, automation, and open-source.</p>
       </section>
 
+      <section id="courses" className="section courses-section">
+        <h2>Courses by Semester</h2>
+
+        <div className="semester">
+          <h3>Fall 2023</h3>
+          <ul>
+            <li>AMERSTD 10 — Introduction to American Studies (4) — B+</li>
+            <li>EPS 88 — PyEarth: A Python Introduction to Earth Science (2) — A</li>
+            <li>HISTORY 30 — Science and Society (4) — A-</li>
+            <li>ISF 60 — Technology and Values (3) — A</li>
+          </ul>
+        </div>
+
+        <div className="semester">
+          <h3>Spring 2024</h3>
+          <ul>
+            <li>COMPSCI 61A — The Structure and Interpretation of Computer Programs (4) — A+</li>
+            <li>COMPSCI 70 — Discrete Mathematics and Probability Theory (4) — A</li>
+            <li>COMPSCI 197 — Field Study (2) — P</li>
+            <li>COMPSCI 198 — Directed Group Studies for Advanced Undergraduates (2) — P</li>
+            <li>DATA C8 — Foundations of Data Science (4) — A</li>
+            <li>ITALIAN R5A — Reading and Composition (4) — B</li>
+          </ul>
+        </div>
+
+        <div className="semester">
+          <h3>Fall 2024</h3>
+          <ul>
+            <li>COGSCI 1 — Introduction to Cognitive Science (4) — A-</li>
+            <li>COMPSCI 61B — Data Structures (4) — A</li>
+            <li>COMPSCI 197 — Field Study (1) — P</li>
+            <li>COMPSCI 198 — Directed Group Studies for Advanced Undergraduates (1) — P</li>
+            <li>DATA C100 — Principles & Techniques of Data Science (4) — A</li>
+            <li>STAT 98 — Directed Group Study (2) — P</li>
+          </ul>
+        </div>
+
+        <div className="semester">
+          <h3>Spring 2025</h3>
+          <ul>
+            <li>EECS 126 — Probability and Random Processes (4) — A-</li>
+            <li>ELENG 120 — Signals and Systems (4) — A-</li>
+            <li>MATH 104 — Introduction to Analysis (4) — C</li>
+            <li>MATH 110 — Abstract Linear Algebra (4) — A</li>
+            <li>MATH 198 — Directed Group Study (1) — P</li>
+          </ul>
+        </div>
+
+        <div className="semester">
+          <h3>Fall 2025</h3>
+          <ul>
+            <li>COMPSCI 61C — Great Ideas of Computer Architecture (4) — (in progress)</li>
+            <li>COMPSCI 162 — Operating Systems and System Programming (4) — (in progress)</li>
+            <li>COMPSCI 170 — Efficient Algorithms and Intractable Problems (4) — (in progress)</li>
+            <li>UGIS 192B — Supervised Research: Social Sciences (4) — (in progress)</li>
+          </ul>
+        </div>
+
+      </section>
+
       <section id="projects" className="section">
         <h2>Projects</h2>
         <div className="projects-grid">
