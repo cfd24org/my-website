@@ -10,6 +10,8 @@ function Hero() {
         &nbsp;•&nbsp;
         <a className="cta" href="mailto:hello@crisostomodunn.com">Contact</a>
         &nbsp;•&nbsp;
+        <a className="cta" href="/resume.html" target="_blank" rel="noopener noreferrer">View resume</a>
+        &nbsp;•&nbsp;
         <a className="cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download resume</a>
       </p>
     </header>
@@ -62,7 +64,11 @@ function App() {
 
       <footer className="site-footer">
         <p>© {new Date().getFullYear()} Crisostomo Dunn</p>
-        <p><a href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download resume (PDF)</a></p>
+        <p>
+          <a className="cta" href="/resume.html" target="_blank" rel="noopener noreferrer">View resume</a>
+          &nbsp;•&nbsp;
+          <a className="cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download resume (PDF)</a>
+        </p>
       </footer>
     </main>
   )
