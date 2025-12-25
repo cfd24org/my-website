@@ -18,6 +18,22 @@
   color: #555;
   margin: 0 0 1rem;
 }
+.hero .profile {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 9999px;
+  border: 4px solid #e6fffa;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero {
+    display: block;
+  }
+}
+
 .cta {
   color: #0ea5a4;
   text-decoration: none;

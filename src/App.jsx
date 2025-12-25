@@ -3,6 +3,7 @@ import './App.css'
 function Hero() {
   return (
     <header className="hero">
+      <img src="/photo1.jpg" alt="Crisostomo Dunn" className="profile" />
       <h1>Crisostomo Dunn</h1>
       <p className="tagline">Engineer &amp; developer — building thoughtful web experiences.</p>
       <p>
