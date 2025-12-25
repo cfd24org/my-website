@@ -6,6 +6,13 @@ function Hero() {
       <img src="/photo1.jpg" alt="Crisostomo Dunn" className="profile" />
       <h1>Crisostomo Dunn</h1>
       <p className="tagline">Engineer &amp; developer — building thoughtful web experiences.</p>
+
+      <div className="socials">
+        <a href="https://github.com/cfd24" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:crisostomodunn24@gmail.com">Email</a>
+      </div>
+
       <p>
         <a className="cta" href="#projects">View projects</a>
         &nbsp;•&nbsp;
