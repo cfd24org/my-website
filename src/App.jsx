@@ -1,5 +1,21 @@
 import './App.css'
 
+function Nav() {
+  return (
+    <nav className="site-nav">
+      <div className="nav-inner">
+        <a href="#top" className="nav-brand">Crisostomo</a>
+        <div className="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+  )
+}
+
 function Hero() {
   return (
     <header className="hero">
@@ -49,6 +65,8 @@ function App() {
 
   return (
     <main>
+      <a id="top" />
+      <Nav />
       <Hero />
 
       <section id="about" className="section">
@@ -65,9 +83,21 @@ function App() {
         </div>
       </section>
 
+      <section id="resume" className="section resume-section">
+        <h2>Resume</h2>
+        <div className="resume-actions">
+          <a className="cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+          &nbsp;•&nbsp;
+          <a className="cta" href="/resume.html" target="_blank" rel="noopener noreferrer">Open in new tab</a>
+        </div>
+        <div className="resume-container">
+          <iframe src="/resume.pdf" title="Resume"></iframe>
+        </div>
+      </section>
+
       <section id="contact" className="section">
         <h2>Contact</h2>
-        <p>Prefer email? <a href="mailto:hello@crisostomodunn.com">hello@crisostomodunn.com</a></p>
+        <p>Prefer email? <a href="mailto:crisostomodunn24@gmail.com">crisostomodunn24@gmail.com</a></p>
       </section>
 
       <footer className="site-footer">
