@@ -1,4 +1,5 @@
 import './App.css'
+import Projects from './components/Projects'
 
 function Nav() {
   return (
@@ -75,8 +76,6 @@ function App() {
       </section>
 
       <section id="courses" className="section courses-section">
-        <h2>Courses by Semester</h2>
-
         <div className="semester">
           <h3>Fall 2023</h3>
           <ul>
@@ -134,14 +133,7 @@ function App() {
 
       </section>
 
-      <section id="projects" className="section">
-        <h2>Projects</h2>
-        <div className="projects-grid">
-          {projects.map((p) => (
-            <ProjectCard key={p.title} {...p} />
-          ))}
-        </div>
-      </section>
+      <Projects />
 
       <section id="resume" className="section resume-section">
         <h2>Resume</h2>

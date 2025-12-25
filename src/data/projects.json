@@ -1,0 +1,14 @@
+[
+  {"id":"sentient-hack","title":"Sentient Chat Hack App","repo":"https://github.com/cfd24org/SentientChatHack---App","desc":"Hackathon app: chat + UI demo.","image":"/favicon.svg","tags":["app","hackathon"]},
+  {"id":"group21","title":"CS162 Group — group21","repo":"https://github.com/cfd24org/group21","desc":"CS162 group project mirror.","image":"/favicon.svg","tags":["os","group"]},
+  {"id":"student617","title":"CS162 — student617","repo":"https://github.com/cfd24org/student617","desc":"Personal CS162 repo (mirror).","image":"/favicon.svg","tags":["os","personal"]},
+  {"id":"fa24-proj3-g303","title":"61B — proj3 (g303)","repo":"https://github.com/cfd24org/fa24-proj3-g303","desc":"61B project 3 mirror.","image":"/favicon.svg","tags":["java","project"]},
+  {"id":"fa24-s181","title":"61B — fa24-s181","repo":"https://github.com/cfd24org/fa24-s181","desc":"Full mirror of 61B course repo.","image":"/favicon.svg","tags":["java","course"]},
+  {"id":"cv_decal","title":"Computer Vision DeCal","repo":"https://github.com/cfd24org/cv_decal","desc":"Notebooks: CLIP, YOLO, ViT, diffusion; cleaned for portfolio.","image":"/photo1.jpg","tags":["cv","notebooks"]},
+  {"id":"data100","title":"Data100 Projects","repo":"https://github.com/cfd24org/data100","desc":"Data100 assignments and projects.","image":"/photo2.jpg","tags":["data","python"]},
+  {"id":"data8","title":"Data8 Projects","repo":"https://github.com/cfd24org/data8","desc":"Data8 labs & projects (cleaned).","image":"/vite.svg","tags":["data","python"]},
+  {"id":"seekers","title":"Seekers Alliance Projects","repo":"https://github.com/cfd24org/Seekers_Alliance_Projects","desc":"Org project collection.","image":"/favicon.svg","tags":["org","projects"]},
+  {"id":"codetenderloin","title":"Code Tenderloin Projects","repo":"https://github.com/cfd24org/CodeTenderloinProjects","desc":"Community projects collection.","image":"/favicon.svg","tags":["community","projects"]},
+  {"id":"honkai","title":"Honkai Stuff","repo":"https://github.com/cfd24org/honkai_stuff","desc":"Personal experiments & assets.","image":"/favicon.svg","tags":["games","personal"]},
+  {"id":"kevini","title":"kevini","repo":"https://github.com/cfd24org/kevini","desc":"Misc personal projects.","image":"/favicon.svg","tags":["misc"]}
+]
