@@ -13,7 +13,6 @@ function Nav() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="/resources.html">Resources</a>
-          <a href="#contact">Contact</a>
         </div>
       </div>
     </nav>
@@ -28,15 +27,13 @@ function Hero() {
       <p className="tagline">Engineer &amp; developer — building thoughtful web experiences.</p>
 
       <div className="socials">
-        <a href="https://github.com/cfd24" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/cfd24org" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:crisostomodunn24@gmail.com">Email</a>
       </div>
 
       <p>
         <a className="cta" href="#projects">View projects</a>
-        &nbsp;•&nbsp;
-        <a className="cta" href="mailto:hello@crisostomodunn.com">Contact</a>
         &nbsp;•&nbsp;
         <a className="cta" href="/resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
       </p>
@@ -93,7 +90,7 @@ function App() {
 
       <section id="contact" className="section">
         <h2>Contact</h2>
-        <p>Prefer email? <a href="mailto:crisostomodunn24@gmail.com">crisostomodunn24@gmail.com</a></p>
+        <p>Email: <a href="mailto:crisostomodunn24@gmail.com">crisostomodunn24@gmail.com</a></p>
       </section>
 
       <footer className="site-footer">
