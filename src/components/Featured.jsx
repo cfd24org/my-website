@@ -25,7 +25,7 @@ export default function Featured() {
           </a>
         ))}
       </div>
-      <p style={{marginTop: '0.75rem'}}><a className="cta" href="/resources.html#projects">See all projects & mirrors</a></p>
+      <p style={{marginTop: '0.75rem'}}><a className="cta" href="/more-info.html#projects">See all projects & mirrors</a></p>
     </section>
   )
 }

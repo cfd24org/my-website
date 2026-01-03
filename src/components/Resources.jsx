@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css'
-import './Resources.css'
 
 const mirrors = [
   { name: 'Computer Vision DeCal (full repo)', url: 'https://github.com/cfd24org/cv_decal' },
@@ -19,51 +18,60 @@ const mirrors = [
 
 export default function Resources() {
   return (
-    <main className="resources-main">
+    <main className="resources-page">
       <header className="resources-hero">
-        <div className="meta">
-          <h1>Crisostomo Dunn</h1>
-          <p className="tagline">Engineer &amp; developer — building thoughtful web experiences.</p>
-          <div className="socials">
-            <a href="https://github.com/cfd24org" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:crisostomodunn24@gmail.com">Email</a>
+        <div className="resources-hero-inner">
+          <div className="resources-title">
+            <h1>Resources</h1>
+            <p className="tagline">Resume, transcript, and project mirrors — organized and easy to browse.</p>
           </div>
-        </div>
-        <div style={{display: 'flex', flexDirection: 'column', gap: '0.6rem'}}>
-          <a className="cta" href="/">Home</a>
+          <nav className="resources-cta">
+            <a className="cta" href="/">Home</a>
+            <a className="cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          </nav>
         </div>
       </header>
 
-      <section id="resources" className="section">
-        <h2>Resources</h2>
-        <div className="resource-cards">
-          <div className="resource">
-            <h3>Resume</h3>
-            <p>View or download the latest resume.</p>
-            <p>
-              <a className="cta" href="/resume.html" target="_blank" rel="noopener noreferrer">Open resume</a>
-              &nbsp;•&nbsp;
-              <a className="cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
-            </p>
+      <section className="resources-content">
+        <div className="resources-grid">
+          <div className="resources-left">
+            <div className="card">
+              <h3>Resume</h3>
+              <p>Up-to-date resume with contact info and experience.</p>
+              <p>
+                <a className="cta" href="/resume.html" target="_blank" rel="noopener noreferrer">Open resume</a>
+                &nbsp;•&nbsp;
+                <a className="cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download PDF</a>
+              </p>
+            </div>
+
+            <div className="card">
+              <h3>Unofficial Transcript</h3>
+              <p>Course list and grades available in the transcript PDF.</p>
+              <p>
+                <a className="cta" href="/unofficial_transcript_cd.pdf" target="_blank" rel="noopener noreferrer">Open transcript (PDF)</a>
+              </p>
+            </div>
           </div>
-          <div className="resource">
-            <h3>Unofficial Transcript</h3>
-            <p>View the unofficial transcript.</p>
-            <p>
-              <a className="cta" href="/unofficial_transcript_cd.pdf" target="_blank" rel="noopener noreferrer">Open transcript (PDF)</a>
-            </p>
+
+          <div className="resources-right">
+            <div className="card">
+              <h3>Project Mirrors</h3>
+              <p className="muted">A selection of repositories mirrored for convenience.</p>
+              <ul className="project-list">
+                {mirrors.map((m) => (
+                  <li key={m.url}><a href={m.url} target="_blank" rel="noopener noreferrer">{m.name}</a></li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="card small">
+              <h3>Contact</h3>
+              <p className="muted">Questions or collabs?</p>
+              <p><a href="mailto:crisostomodunn24@gmail.com">crisostomodunn24@gmail.com</a></p>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section id="projects" className="section">
-        <h2>Project Mirrors</h2>
-        <ul>
-          {mirrors.map((m) => (
-            <li key={m.url}><a href={m.url} target="_blank" rel="noopener noreferrer">{m.name}</a></li>
-          ))}
-        </ul>
       </section>
     </main>
   )

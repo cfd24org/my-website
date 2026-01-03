@@ -11,7 +11,7 @@ function Nav() {
         <a href="/" className="nav-brand">Crisostomo</a>
         <div className="nav-links">
           <a href="/#about">About</a>
-          <a href="/resources.html">Resources</a>
+          <a href="/more-info.html">More Info</a>
         </div>
       </div>
     </nav>
@@ -34,7 +34,7 @@ function Hero() {
       <p>
         <a className="cta" href="#projects">View projects</a>
         &nbsp;•&nbsp;
-        <a className="cta" href="/resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
+        <a className="cta" href="/more-info.html" target="_blank" rel="noopener noreferrer">More Info</a>
       </p>
     </header>
   )
@@ -95,7 +95,7 @@ function App() {
       <footer className="site-footer">
         <p>© {new Date().getFullYear()} Crisostomo Dunn</p>
         <p>
-          <a className="cta" href="/resources.html" target="_blank" rel="noopener noreferrer">Resources</a>
+          <a className="cta" href="/more-info.html" target="_blank" rel="noopener noreferrer">More Info</a>
         </p>
       </footer>
     </main>
