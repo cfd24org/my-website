@@ -1,5 +1,5 @@
 import './App.css'
-import Projects from './components/Projects'
+// Projects component not imported in main app nav to avoid unused import
 import PasswordGate from './components/PasswordGate'
 import React, { useState } from 'react'
 import Featured from './components/Featured'
@@ -8,10 +8,9 @@ function Nav() {
   return (
     <nav className="site-nav">
       <div className="nav-inner">
-        <a href="#top" className="nav-brand">Crisostomo</a>
+        <a href="/" className="nav-brand">Crisostomo</a>
         <div className="nav-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
+          <a href="/#about">About</a>
           <a href="/resources.html">Resources</a>
         </div>
       </div>
