@@ -38,6 +38,7 @@
   color: #0ea5a4;
   text-decoration: none;
   font-weight: 600;
+  border-radius: 8px;
 }
 .section {
   padding: 2rem 1rem;
@@ -277,3 +278,62 @@
 }
 
 /* end more-info styles */
+
+/* Polished theme for More Info page */
+:root {
+  --mi-accent-a: #7c3aed; /* purple */
+  --mi-accent-b: #06b6d4; /* teal */
+  --mi-bg-1: #0b1220;
+  --mi-bg-2: #071023;
+  --mi-card: rgba(255,255,255,0.04);
+  --mi-text: #e6eef8;
+  --mi-muted: #9fb3c8;
+}
+
+.more-info { 
+  background: linear-gradient(180deg, var(--mi-bg-1), var(--mi-bg-2));
+  color: var(--mi-text);
+  padding: 3rem 1rem 4rem;
+  min-height: 100vh;
+}
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: linear-gradient(180deg, rgba(3,7,18,0.6), rgba(3,7,18,0.3));
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+.nav-inner { max-width: 1100px; margin: 0 auto; padding: 0.9rem 1rem; }
+.nav-brand { color: var(--mi-accent-a); font-weight: 800; letter-spacing: -0.5px; }
+.nav-links a { color: rgba(230,238,248,0.9); }
+
+.more-hero { margin: 0 auto 1.25rem; max-width: 1100px; }
+.more-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02)); padding:1.25rem 1.25rem; border-radius:12px; box-shadow: 0 8px 30px rgba(2,6,23,0.6); }
+.more-inner h1 { margin:0; font-size:1.85rem; color: var(--mi-text); }
+.more-inner .tagline { margin-top:0.25rem; color: var(--mi-muted); }
+.more-actions .cta { background: linear-gradient(90deg,var(--mi-accent-a),var(--mi-accent-b)); color: #fff; padding: 0.6rem 0.9rem; border-radius:8px; text-decoration:none; font-weight:700; box-shadow: 0 6px 20px rgba(99,102,241,0.12); }
+.more-actions .cta + .cta { background: transparent; color: var(--mi-text); border:1px solid rgba(255,255,255,0.06); padding:0.55rem 0.85rem; margin-left:0.5rem; }
+
+.more-grid { max-width:1100px; margin:1rem auto 0; display:grid; grid-template-columns: 1fr 360px; gap:1rem; }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:1.1rem; border-radius:10px; border:1px solid rgba(255,255,255,0.03); color:var(--mi-text); }
+.card h3 { margin:0 0 0.5rem 0; }
+.card p { color: var(--mi-muted); margin:0 0 0.75rem 0; }
+.project-list { list-style:none; padding-left:0; margin:0; display:grid; gap:0.5rem; }
+.project-list a { color: var(--mi-accent-b); text-decoration:none; font-weight:700; }
+.more-right .card { position:relative; }
+
+/* subtle divider */
+.more-left .card + .card { margin-top:0.85rem; }
+
+@media (max-width: 880px) {
+  .more-inner { flex-direction:column; align-items:flex-start; }
+  .more-actions { width:100%; display:flex; gap:0.5rem; }
+  .more-grid { grid-template-columns: 1fr; }
+}
+
+/* small refinements for links and CTAs across site */
+.cta { border-radius: 8px; }
+
+/* end polished more-info theme */
