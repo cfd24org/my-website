@@ -1,5 +1,6 @@
 import React from 'react'
 import '../App.css'
+import './Resources.css'
 
 const mirrors = [
   { name: 'Computer Vision DeCal (full repo)', url: 'https://github.com/cfd24org/cv_decal' },
@@ -18,18 +19,20 @@ const mirrors = [
 
 export default function Resources() {
   return (
-    <main>
-      <header className="hero">
-        <h1>Crisostomo Dunn</h1>
-        <p className="tagline">Engineer &amp; developer — building thoughtful web experiences.</p>
-        <div className="socials">
-          <a href="https://github.com/cfd24org" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="mailto:crisostomodunn24@gmail.com">Email</a>
+    <main className="resources-main">
+      <header className="resources-hero">
+        <div className="meta">
+          <h1>Crisostomo Dunn</h1>
+          <p className="tagline">Engineer &amp; developer — building thoughtful web experiences.</p>
+          <div className="socials">
+            <a href="https://github.com/cfd24org" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:crisostomodunn24@gmail.com">Email</a>
+          </div>
         </div>
-        <p>
+        <div style={{display: 'flex', flexDirection: 'column', gap: '0.6rem'}}>
           <a className="cta" href="/">Home</a>
-        </p>
+        </div>
       </header>
 
       <section id="resources" className="section">
