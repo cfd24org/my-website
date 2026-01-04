@@ -7,6 +7,13 @@
     <meta name="description" content="Resume, transcript, and project mirrors for Crisostomo Dunn." />
     <link rel="stylesheet" href="/index.css" />
     <link rel="stylesheet" href="/App.css" />
+    <!-- Small visual polish for the projects grid on this static page -->
+    <style>
+      /* Keep styles minimal — rely on existing App.css for the heavy lifting */
+      .projects-hero { margin: 1.25rem 0; }
+      .projects-grid .project-thumb img { height: 120px; object-fit: cover; }
+      .more-projects .card { margin-top: 1rem; }
+    </style>
   </head>
   <body>
     <nav class="site-nav">
@@ -53,6 +60,36 @@
               <li><a href="https://github.com/cfd24org" target="_blank">GitHub</a></li>
               <li><a href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank">LinkedIn</a></li>
             </ul>
+          </div>
+
+          <!-- New: Featured Projects section (static, visually matches React components) -->
+          <div class="card more-projects" aria-labelledby="projects-title">
+            <h3 id="projects-title">Featured Projects</h3>
+            <p class="tagline">A curated selection of recent work and course projects.</p>
+
+            <div class="projects-grid" style="margin-top:0.75rem;">
+              <a class="project-card" href="https://github.com/cfd24org/data100/tree/main/projB2" target="_blank" rel="noopener noreferrer">
+                <div class="project-thumb"><img src="/favicon.svg" alt="Spam email classification"/></div>
+                <div class="project-body"><h3>Data100 — Spam Email Classification</h3><p>ML project classifying spam vs. not-spam on real-world text.</p><div class="tags"><span class="tag">data</span><span class="tag">python</span></div></div>
+              </a>
+
+              <a class="project-card" href="https://github.com/cfd24org/group21" target="_blank" rel="noopener noreferrer">
+                <div class="project-thumb"><img src="/favicon.svg" alt="Pintos OS"/></div>
+                <div class="project-body"><h3>CS162 — Pintos (Group)</h3><p>Extended Pintos OS with file system and buffer cache.</p><div class="tags"><span class="tag">os</span><span class="tag">systems</span></div></div>
+              </a>
+
+              <a class="project-card" href="https://github.com/cfd24org/fa24-proj3-g303" target="_blank" rel="noopener noreferrer">
+                <div class="project-thumb"><img src="/favicon.svg" alt="BYOB project"/></div>
+                <div class="project-body"><h3>61B — BYOB (proj3)</h3><p>Large-scale Java game built for CS61B.</p><div class="tags"><span class="tag">java</span><span class="tag">project</span></div></div>
+              </a>
+
+              <a class="project-card" href="https://github.com/cfd24org/cv_decal/tree/main/zero_shot_clip" target="_blank" rel="noopener noreferrer">
+                <div class="project-thumb"><img src="/favicon.svg" alt="Zero-shot CLIP"/></div>
+                <div class="project-body"><h3>Computer Vision DeCal — Zero-Shot CLIP</h3><p>Zero-shot image classification experiments with CLIP on CIFAR-10.</p><div class="tags"><span class="tag">cv</span><span class="tag">notebooks</span></div></div>
+              </a>
+            </div>
+
+            <p style="margin-top:0.75rem"><a class="cta" href="/resources.html#projects">See all projects & mirrors</a></p>
           </div>
         </div>
 
