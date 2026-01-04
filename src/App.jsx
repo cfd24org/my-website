@@ -1,7 +1,14 @@
+// src/App.jsx
+// App entry component for the portfolio site
+// - Purpose: compose top-level layout (navigation, hero, main sections, footer)
+// - Notes: Keep this file focused on layout only. Individual UI sections live in
+//   `src/components/*`. Styling is primarily in `src/App.css`.
+
 import './App.css'
 import React from 'react'
 import Featured from './components/Featured'
 
+// Top navigation — small, self-contained component used only in this file.
 function Nav() {
   return (
     <nav className="top-nav">
@@ -16,6 +23,7 @@ function Nav() {
   )
 }
 
+// Default export: application shell. Keep this file purely presentational.
 export default function App() {
   return (
     <div className="app-shell">

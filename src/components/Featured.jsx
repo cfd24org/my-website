@@ -1,3 +1,8 @@
+// src/components/Featured.jsx
+// Featured projects UI
+// - Purpose: display a small curated list of projects from `src/data/projects.json`.
+// - Notes: kept intentionally minimal and presentational. Open external links in a new tab.
+
 import React from 'react'
 import projects from '../data/projects.json'
 

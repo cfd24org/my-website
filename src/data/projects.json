@@ -1,4 +1,7 @@
 [
+  {
+    "note": "Projects are consumed by components via import."
+  },
   {"id":"data100-projb2","title":"Data100: Project B2 — Spam Email Classification","repo":"https://github.com/cfd24org/data100/tree/main/projB2","desc":"Classified emails as spam or not spam using machine learning on real-world text data.","shortDesc":"Classified emails as spam or not spam using machine learning on real-world text data.","image":"/favicon.svg","tags":["data","python"],"category":"data100","featured":true},
   {"id":"group21","title":"CS162 Group — Pintos","repo":"https://github.com/cfd24org/group21","desc":"Extended Pintos OS with a file system and buffer cache for CS162.","shortDesc":"Extended Pintos OS with a file system and buffer cache for CS162.","image":"/favicon.svg","tags":["os","group"],"category":"cs162","featured":true},
   {"id":"fa24-proj3-g303","title":"61B — BYOB Project (proj3)","repo":"https://github.com/cfd24org/fa24-proj3-g303","desc":"Designed and built a large-scale Java game for CS61B.","shortDesc":"Designed and built a large-scale Java game for CS61B.","image":"/favicon.svg","tags":["java","project"],"category":"61b","featured":true},

@@ -1,3 +1,11 @@
+// src/components/Projects.jsx
+// Projects listing component (full project directory)
+// - Purpose: render projects grouped by category for a comprehensive projects page.
+// - Status: currently NOT imported by `src/App.jsx` (the app shows a curated Featured list).
+//   This file is kept intentionally as a complete listing implementation for a future
+//   `/projects` or `/more-info` view. If you'd like to remove unused code, this file
+//   is a safe candidate to delete or move to `src/legacy/`.
+
 import React from 'react'
 import projects from '../data/projects.json'
 

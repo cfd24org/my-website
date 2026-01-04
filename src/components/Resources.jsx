@@ -1,3 +1,8 @@
+// src/components/Resources.jsx
+// Resources page (standalone view)
+// - Purpose: provide resume, transcript, and a curated list of project mirrors.
+// - Notes: this component is used by `public/resources.html` as a static entry.
+
 import React from 'react'
 import '../App.css'
 
