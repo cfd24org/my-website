@@ -1,97 +1,63 @@
 import './App.css'
-// Projects component not imported in main app nav to avoid unused import
 import React from 'react'
 import Featured from './components/Featured'
 
 function Nav() {
   return (
-    <nav className="site-nav">
+    <nav className="top-nav">
       <div className="nav-inner">
-        <a href="/" className="nav-brand">Crisostomo</a>
+        <a className="nav-brand" href="/">Crisostomo</a>
         <div className="nav-links">
           <a href="/#about">About</a>
-          <a href="/more-info.html">More Info</a>
+          <a href="#projects">Projects</a>
         </div>
       </div>
     </nav>
   )
 }
 
-function Hero() {
+export default function App() {
   return (
-    <header className="hero">
-      <img src="/photo1.jpg" alt="Crisostomo Dunn" className="profile" />
-      <h1>Crisostomo Dunn</h1>
-      <p className="tagline">Engineer &amp; developer — building thoughtful web experiences.</p>
-
-      <div className="socials">
-        <a href="https://github.com/cfd24org" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/crisostomo-dunn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="mailto:crisostomodunn24@gmail.com">Email</a>
-      </div>
-
-      <p>
-        <a className="cta" href="#projects">View projects</a>
-        &nbsp;•&nbsp;
-        <a className="cta" href="/more-info.html" target="_blank" rel="noopener noreferrer">More Info</a>
-      </p>
-    </header>
-  )
-}
-
-function ProjectCard({ title, description, url }) {
-  return (
-    <article className="project">
-      <h3>{title}</h3>
-      <p>{description}</p>
-      {url && (
-        <p>
-          <a href={url} target="_blank" rel="noopener noreferrer">View</a>
-        </p>
-      )}
-    </article>
-  )
-}
-
-function App() {
-  // No password gate in production. Render the app directly.
-
-  const projects = [
-    { title: 'Project One', description: 'Short description of project one.', url: '#' },
-    { title: 'Project Two', description: 'Short description of project two.', url: '#' },
-    { title: 'Project Three', description: 'Short description of project three.', url: '#' },
-  ]
-
-  return (
-    <main>
-      <a id="top" />
+    <div className="app-shell">
       <Nav />
-      <Hero />
 
-      <section id="about" className="section">
-        <h2>About</h2>
-        <p>I build web apps and design simple user experiences. I enjoy frontend engineering, automation, and open-source.</p>
-      </section>
+      <header className="hero-large">
+        <div className="hero-inner">
+          <div className="hero-copy">
+            <h1>Hi — I’m Crisostomo</h1>
+            <p className="hero-sub">Engineer & developer. I build focused, usable web apps and tools.</p>
+            <div className="hero-actions">
+              <a className="btn primary" href="#projects">See Projects</a>
+              <a className="btn" href="mailto:crisostomodunn24@gmail.com">Contact</a>
+            </div>
+          </div>
+          <div className="hero-art">
+            <img src="/photo2.jpg" alt="profile" />
+          </div>
+        </div>
+      </header>
 
-      {/* courses moved off the homepage; full transcript in Resources page */}
+      <main>
+        <section id="about" className="section about">
+          <div className="container">
+            <h2>About</h2>
+            <p>I focus on frontend engineering, automation, and building clear user experiences. I enjoy open-source and mentoring others.</p>
+          </div>
+        </section>
 
-      <Featured />
-
-      {/* keep Projects component on the resources page only */}
-
-      <section id="contact" className="section">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:crisostomodunn24@gmail.com">crisostomodunn24@gmail.com</a></p>
-      </section>
+        <section id="projects" className="section projects">
+          <div className="container">
+            <h2>Projects</h2>
+            <Featured />
+          </div>
+        </section>
+      </main>
 
       <footer className="site-footer">
-        <p>© {new Date().getFullYear()} Crisostomo Dunn</p>
-        <p>
-          <a className="cta" href="/more-info.html" target="_blank" rel="noopener noreferrer">More Info</a>
-        </p>
+        <div className="container">
+          <p>© {new Date().getFullYear()} Crisostomo Dunn</p>
+        </div>
       </footer>
-    </main>
+    </div>
   )
 }
-
-export default App
