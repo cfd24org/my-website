@@ -1,7 +1,6 @@
 import './App.css'
 // Projects component not imported in main app nav to avoid unused import
-import PasswordGate from './components/PasswordGate'
-import React, { useState } from 'react'
+import React from 'react'
 import Featured from './components/Featured'
 
 function Nav() {
@@ -55,14 +54,7 @@ function ProjectCard({ title, description, url }) {
 }
 
 function App() {
-  const [unlocked, setUnlocked] = useState(() => {
-    if (typeof window !== 'undefined') return sessionStorage.getItem('site_unlocked') === '1'
-    return false
-  })
-
-  if (!unlocked) {
-    return <PasswordGate onUnlock={() => setUnlocked(true)} />
-  }
+  // No password gate in production. Render the app directly.
 
   const projects = [
     { title: 'Project One', description: 'Short description of project one.', url: '#' },
